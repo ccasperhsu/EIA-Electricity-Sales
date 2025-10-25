@@ -13,6 +13,4 @@ CREATE TABLE IF NOT EXISTS e_sales (
     
 select * from e_sales;
 
--- putting in some dummy data
-INSERT INTO e_sales (period, stateid, sectorid, customers, price, revenue, sales)
-VALUES (2023-01, "CA", 22, 2222, 2222, 22333, 11111);
+DELETE FROM e_sales;
