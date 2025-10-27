@@ -7,10 +7,19 @@ CREATE TABLE IF NOT EXISTS e_sales (
         customers INT NOT NULL,
         price INT NOT NULL,
         revenue INT NOT NULL,
-        sales INT NOT NULL,
-        PRIMARY KEY (period, stateid)
+        sales INT NOT NULL
+        PRIMARY KEY (period, stateid, sectorid)
     );
     
-select * from e_sales;
+select count(*) from e_sales;
 
 DELETE FROM e_sales;
+
+
+
+
+
+Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.  To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+
+
+
